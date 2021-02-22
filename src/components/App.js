@@ -6,7 +6,6 @@ import SearchAppointments from './SearchAppointments';
 import ListAppointments from './ListAppointments';
 // import { without } from 'lodash';
 
-
 class App extends Component {
 
   constructor() {
@@ -18,10 +17,10 @@ class App extends Component {
     this.deleteAppointment = this.deleteAppointment.bind(this);
   };
 
-  deleteAppointment(apt) { 
+  deleteAppointment(apt) {
     let temptApts = this.state.myAppointments;
     // temptApts = without(temptApts, apt);                     // 'without' method require lodash
-    temptApts = temptApts.filter( t => t.aptId !== apt.aptId ); // wothout lodash
+    temptApts = temptApts.filter(t => t.aptId !== apt.aptId); // wothout lodash
 
     this.setState({
       myAppointments: temptApts

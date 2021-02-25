@@ -35,7 +35,7 @@ class ListAppointments extends Component {
               <div className="apt-notes">{item.aptNotes}</div>
             </div>
           </div>
-        ))};
+        ))}
 
       </div>
     );
